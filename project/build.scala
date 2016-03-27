@@ -24,8 +24,10 @@ object ScalaBuild extends Build {
       resolvers += Classpaths.typesafeReleases,
       resolvers += "Scalaz Bintray Repo" at "http://dl.bintray.com/scalaz/releases",
       libraryDependencies ++= Seq(
-        "mysql" % "mysql-connector-java" % "5.1.25",
-    	"net.liftweb" %% "lift-json" % "2.6.2",
+		"org.squeryl" %% "squeryl" % "0.9.5-7", 
+		"com.h2database" % "h2" % "1.3.166",
+		"c3p0" % "c3p0" % "0.9.1.2" ,
+		"net.liftweb" %% "lift-json" % "2.6.2",
         "org.scalatra" %% "scalatra" % ScalatraVersion,
         "org.scalatra" %% "scalatra-scalate" % ScalatraVersion,
         "org.scalatra" %% "scalatra-specs2" % ScalatraVersion % "test",
